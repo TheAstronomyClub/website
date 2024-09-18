@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | IISER-M Astroclub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="text-box">
+            <h1>Photo Gallery</h1>
+            <p>Explore the cosmos through our events and activities!</p>
+        </div>
+    </section>
+
+    <!-- Admin-only section for uploading photos (only visible to admins) -->
+    <section id="admin-upload" class="admin-only">
+        <h2>Admin: Upload New Photos</h2>
+        <form id="upload-form">
+            <label for="image-upload">Choose an image to upload:</label>
+            <input type="file" id="image-upload" accept="image/*">
+            <input type="text" id="gallery-title" placeholder="Enter Gallery Title">
+            <button type="submit">Upload Photo</button>
+        </form>
+    </section>
+
+    <!-- Photo gallery that all users can view -->
+    <section class="gallery">
+        <h2>Event Galleries</h2>
+        <div class="gallery-container" id="gallery-container">
+            <!-- Images dynamically added here -->
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Astronomy Club, IISER Mohali. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
